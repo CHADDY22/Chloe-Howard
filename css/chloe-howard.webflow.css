@@ -1417,9 +1417,10 @@
   }
 
   .nameplate-and-controls {
-    flex: 0 auto;
+    flex: none;
     height: auto;
     min-height: auto;
+    margin: 5px;
   }
 
   .chloe-howard {
