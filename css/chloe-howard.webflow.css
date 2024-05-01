@@ -1,0 +1,1622 @@
+:root {
+  --white: #fff;
+  --white-2: white;
+  --black: black;
+  --hot-pink: #f10354;
+  --light-grey: #efefef;
+  --green: #0cc556;
+}
+
+.frame {
+  background-color: #13131f;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px 40px 10px;
+  display: flex;
+}
+
+.screen-and-speakers {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+}
+
+.left-speaker {
+  border: 1px solid var(--white);
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+.screen {
+  border: 2px solid var(--white);
+  cursor: none;
+  background-image: url('../images/Space_Lounge_1.webp');
+  background-position: 50% 82%;
+  background-size: cover;
+  border-radius: 15px;
+  flex-flow: column;
+  flex: 1;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 82vh;
+  padding: 10px;
+  display: flex;
+  position: relative;
+}
+
+.right-speaker {
+  border: 1px solid var(--white);
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+.nameplate-and-controls {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-flow: row;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  overflow: hidden;
+}
+
+.chloe-howard {
+  flex: none;
+  width: 600px;
+}
+
+.controls-right {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex: 1;
+  align-items: center;
+  display: flex;
+}
+
+.controls-left {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.power-indicator {
+  border: 1px solid var(--white);
+  border-radius: 20px;
+  width: 15px;
+  height: 15px;
+}
+
+.vents {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-flow: column;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+}
+
+.div-block {
+  border: 1px solid var(--white);
+  border-radius: 20px;
+  width: auto;
+  height: 10px;
+}
+
+.power-toggle {
+  border: 1px solid var(--white);
+  border-radius: 20px;
+  flex-flow: column;
+  align-items: center;
+  width: 25px;
+  height: 45px;
+  display: flex;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.div-block-2 {
+  border: 1px solid var(--white);
+  background-color: #dadada;
+  border-radius: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+.green-light {
+  filter: blur(2px);
+  background-color: #00ff19;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.top-programs {
+  justify-content: space-between;
+  align-self: flex-end;
+  margin: 20px;
+  display: flex;
+  position: relative;
+}
+
+.nav-doc {
+  background-image: url('../images/desktop-shelf_1.webp');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-content: center;
+  height: 10%;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.nav-buttons {
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+
+.nav-item-container {
+  cursor: none;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 2px;
+  display: flex;
+}
+
+.item {
+  background-image: url('../images/Booking.gif');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: auto;
+}
+
+.item.booking {
+  background-image: url('../images/Booking.gif'), radial-gradient(circle farthest-corner at 50% 50%, var(--white), rgba(255, 255, 255, 0) 68%);
+  background-position: 50%, 0 0;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto;
+  width: 125px;
+  height: 125px;
+  margin-bottom: 0;
+  transition: all .35s;
+}
+
+.item.booking:hover {
+  width: 125px;
+  transform: translate(0, -29px);
+}
+
+.item.flash {
+  background-image: url('../images/Flash.gif'), radial-gradient(circle farthest-corner at 50% 50%, var(--white), rgba(255, 255, 255, 0) 69%);
+  background-position: 50%, 0 0;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto;
+  width: 125px;
+  height: 125px;
+  transition: all .35s;
+}
+
+.item.flash:hover {
+  transform: translate(0, -29px);
+}
+
+.item.info {
+  background-image: url('../images/Info.gif'), radial-gradient(circle farthest-corner at 50% 50%, var(--white), rgba(255, 255, 255, 0) 69%);
+  background-position: 50%, 0 0;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto;
+  width: 125px;
+  height: 125px;
+  transition: all .35s;
+}
+
+.item.info:hover {
+  transform: translate(0, -29px);
+}
+
+.item.gallery {
+  background-image: url('../images/Gallery.gif'), radial-gradient(circle farthest-corner at 50% 50%, var(--white), rgba(255, 255, 255, 0) 69%);
+  background-position: 50%, 0 0;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto;
+  width: 125px;
+  height: 125px;
+  transition: all .35s;
+}
+
+.item.gallery:hover {
+  transform: translate(0, -29px);
+}
+
+.item.merch {
+  background-image: url('../images/Shop.gif'), radial-gradient(circle farthest-corner at 50% 50%, var(--white), rgba(255, 255, 255, 0) 67%);
+  cursor: pointer;
+  background-position: 50%, 0 0;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto;
+  width: 125px;
+  height: 125px;
+  transition: all .35s;
+}
+
+.item.merch:hover {
+  transform: translate(0, -29px);
+}
+
+.light {
+  background-color: var(--white);
+  filter: blur(4px);
+  border-radius: 20px;
+  width: 55px;
+  height: 15px;
+  margin-top: 0;
+  display: none;
+}
+
+.item-name {
+  color: #f10154;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: rgba(241, 1, 84, 0);
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.music-player {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  flex-flow: column;
+  align-self: flex-start;
+  align-items: center;
+  display: none;
+}
+
+.cd {
+  width: 75px;
+}
+
+.text-block {
+  color: var(--white);
+  padding-top: 10px;
+  font-family: Pixeloidsans, sans-serif;
+  font-weight: 700;
+}
+
+.text-block-2 {
+  color: #0f1;
+  font-family: Pixeloidsans, sans-serif;
+  font-weight: 400;
+}
+
+.tattoo-slide-widget {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  background-image: linear-gradient(219deg, #fff, #aaa 9%, var(--white-2) 17%, #bbb 39%, #f1f1f1 42%, #bebebe 56%, var(--white) 74%, #d3d3d3 85%, #fff 94%, white);
+  border-radius: 15px;
+  flex-flow: column;
+  justify-content: flex-end;
+  width: 250px;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+}
+
+.div-block-3 {
+  border: 4px solid #000;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.slider {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  background-image: url('../images/Copy-of-Copy-of-Copy_of_chloe-tattoos22_1.webp');
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 17px;
+}
+
+.slide-2 {
+  background-image: url('../images/Copy-of-PXL_20240316_220446803.MP1_1.webp');
+  background-position: 50%;
+  background-size: cover;
+  border: 1px solid #000;
+  border-radius: 17px;
+  overflow: hidden;
+}
+
+.slide-3 {
+  background-image: url('../images/Copy-of-PXL_20231220_203924438.MP1_1.webp');
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.slide-4 {
+  background-image: url('../images/Copy-of-PXL_20240330_191831780.MP_1.webp');
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.slide-5 {
+  background-image: url('../images/Copy-of-chloe-tattoos16_1.webp');
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.div-block-4 {
+  background-color: var(--black);
+  border-radius: 20px;
+  flex: 0 auto;
+  order: -1;
+  width: 90%;
+  height: 15px;
+  display: none;
+}
+
+.text-block-3 {
+  color: #00ff13;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 3px;
+  padding-left: 10px;
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.blackout {
+  z-index: 999999;
+  background-color: var(--black);
+  border-radius: 15px;
+  display: none;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.cursor {
+  z-index: 999999999;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.custom-cursor {
+  background-image: url('../images/cursor.GIF');
+  background-position: 27% 27%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 55px;
+  height: 55px;
+}
+
+.custom-code {
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
+.div-block-5 {
+  padding: 0;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.window {
+  border: 10px solid var(--white);
+  background-color: #e27ea9;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.window.flash-mod {
+  background-color: var(--light-grey);
+  color: var(--black);
+  padding: 2px;
+}
+
+.booking-contents {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: space-between;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.booking-left-side {
+  background-color: #ffdefe;
+  background-image: url('../images/Booking_Page_Graphic.gif');
+  background-position: 50%;
+  background-size: contain;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  flex: none;
+  width: 40%;
+}
+
+.booking-right-side {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-flow: column;
+  flex: 1;
+  display: flex;
+}
+
+.booking-top-edge {
+  background-image: url('../images/Asset-1non.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 58px;
+}
+
+.div-block-6 {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  border: 2px solid #000;
+  flex-flow: column;
+  flex: none;
+  padding: 10px;
+  display: flex;
+  position: relative;
+}
+
+.data-loading {
+  color: var(--black);
+  letter-spacing: 3px;
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 12px;
+}
+
+.text-block-5 {
+  color: var(--black);
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.text-block-6 {
+  color: var(--black);
+  margin-top: 10px;
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.text-block-7 {
+  color: var(--black);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: Pixeloidsans, sans-serif;
+}
+
+.buttons-box {
+  border: 2px solid #000;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: stretch;
+  display: flex;
+}
+
+.div-block-7 {
+  background-color: var(--black);
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 30px;
+  display: flex;
+}
+
+.text-block-8 {
+  color: var(--white);
+  white-space: nowrap;
+  align-self: flex-start;
+  margin-left: -28px;
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  transform: rotate(-90deg);
+}
+
+.text-block-8.more-flash-mod {
+  margin-left: -57px;
+}
+
+.text-block-8.gallery-selector {
+  margin-left: -32px;
+}
+
+.div-block-8 {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-flow: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div-block-8.flash-mod {
+  grid-column-gap: 55px;
+  grid-row-gap: 55px;
+  flex-flow: row;
+  flex: 1;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+}
+
+.div-block-8.gallery-mod {
+  flex-flow: row;
+  justify-content: center;
+  align-items: stretch;
+  height: 300px;
+  margin: 10px;
+}
+
+.image-3 {
+  width: auto;
+}
+
+.image-3:hover {
+  mix-blend-mode: hard-light;
+}
+
+.image-4 {
+  width: auto;
+  max-width: 100%;
+}
+
+.image-4:hover {
+  mix-blend-mode: overlay;
+}
+
+.div-block-9 {
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
+}
+
+.div-block-9:hover {
+  background-color: var(--hot-pink);
+  opacity: 1;
+}
+
+.text-block-9 {
+  color: var(--black);
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 29px;
+  display: inline-block;
+}
+
+.link-block {
+  align-self: auto;
+  width: 75%;
+}
+
+.link-block-2 {
+  width: 75%;
+}
+
+.flash-window-style {
+  border: 1px solid #000;
+  height: auto;
+  padding: 10px;
+}
+
+.inner-border {
+  border: 2px solid #000;
+  height: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+.text-block-10 {
+  letter-spacing: 3px;
+  font-family: Pixeloidsans, sans-serif;
+}
+
+.flash-header {
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 20px auto;
+  display: flex;
+}
+
+.flash-header-text {
+  white-space: nowrap;
+  flex: 1;
+  margin-left: -10px;
+}
+
+.flash-header-text.aftercare-mod {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.text-block-11 {
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.image-5 {
+  width: 150px;
+}
+
+.text-block-12 {
+  text-align: left;
+  margin-top: 20px;
+  font-family: Pixeloidsans, sans-serif;
+}
+
+.flash-grid {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: grid;
+}
+
+.flash-item {
+  border: 1px solid #000;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, .2);
+}
+
+.flash-price {
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top: auto;
+  bottom: 2%;
+  left: 3%;
+  right: auto;
+}
+
+.more-flash {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.flash-folder {
+  flex: none;
+}
+
+.more-flash-text {
+  color: var(--black);
+  text-align: center;
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link-block-3 {
+  text-decoration: none;
+}
+
+.link-block-3:hover {
+  filter: contrast(200%);
+  mix-blend-mode: normal;
+}
+
+.link-block-4 {
+  text-decoration: none;
+  position: relative;
+}
+
+.link-block-4:hover {
+  filter: contrast(200%);
+}
+
+.link-block-5 {
+  text-decoration: none;
+}
+
+.link-block-5:hover {
+  filter: contrast(200%);
+}
+
+.text-block-13 {
+  color: var(--hot-pink);
+  text-align: center;
+  font-family: Pixeloidsans, sans-serif;
+  position: absolute;
+  top: auto;
+  bottom: -12%;
+  left: 0%;
+  right: 0%;
+}
+
+.flash-disclaimer {
+  border: 2px solid var(--hot-pink);
+  margin: 40px;
+  padding: 100px;
+}
+
+.text-block-14 {
+  color: var(--hot-pink);
+  text-align: center;
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.text-block-15 {
+  color: var(--black);
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 40px;
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.div-block-11 {
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
+}
+
+.gallery-selector {
+  margin-left: 40px;
+  margin-right: 40px;
+  display: none;
+}
+
+.tattoo-selector {
+  background-image: url('../images/Copy-of-PXL_20240330_191831780.MP_1.webp');
+  background-position: 50%;
+  background-size: cover;
+  border: 1px solid #000;
+  flex-flow: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.illustration-selector {
+  background-image: url('../images/open-graph-image_1.webp');
+  background-position: 0%;
+  background-size: cover;
+  border: 1px solid #000;
+  flex-flow: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.text-block-16 {
+  color: var(--white);
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--black);
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+.tattoo-gallery {
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.text-block-17 {
+  text-align: center;
+  padding-bottom: 40px;
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+.tattoo-grid {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.tattoo-item {
+  aspect-ratio: auto;
+  object-fit: cover;
+  border: 1px solid #000;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.div-block-12 {
+  margin-top: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.illustration-gallery {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.illustraition-item {
+  object-fit: cover;
+  border: 1px solid #000;
+}
+
+.image-6 {
+  object-fit: fill;
+  width: 100%;
+}
+
+.info-wrapper {
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  flex-flow: column;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+}
+
+.heading {
+  font-family: Pixeloidsans, sans-serif;
+}
+
+.info-item {
+  text-transform: uppercase;
+}
+
+.text-block-18 {
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.div-block-13 {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.div-block-13.custom-examples {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 20px;
+}
+
+.custom-item {
+  border: 1px solid #000;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.text-span {
+  font-size: 22px;
+}
+
+.aftercare-wrapper {
+  margin-top: 60px;
+}
+
+.image-8 {
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.aftercare {
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  position: absolute;
+  top: 10%;
+  bottom: auto;
+  left: -49%;
+  right: auto;
+}
+
+.text-block-19 {
+  color: var(--white-2);
+  text-align: center;
+  font-family: Pixeloidsans, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.image-9 {
+  width: 75px;
+  padding: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .chloe-howard {
+    width: 500px;
+  }
+
+  .mobile-nav, .cursor {
+    display: none;
+  }
+
+  .div-block-6 {
+    flex: none;
+    height: 75%;
+  }
+
+  .data-loading {
+    font-size: 10px;
+  }
+
+  .text-block-6 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .text-block-7 {
+    font-size: 12px;
+  }
+
+  .buttons-box {
+    flex: 1;
+  }
+
+  .div-block-8.flash-mod {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .text-block-10 {
+    font-size: 12px;
+  }
+
+  .text-block-11 {
+    font-size: 45px;
+  }
+
+  .image-5 {
+    width: 100px;
+  }
+
+  .flash-grid {
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .more-flash {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .flash-disclaimer {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 60px;
+  }
+
+  .gallery-selector, .tattoo-gallery, .div-block-12 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .info-wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .aftercare {
+    left: -149%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .frame {
+    padding: 20px;
+  }
+
+  .screen-and-speakers {
+    flex: 1;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .screen {
+    flex-flow: row;
+    height: 100%;
+  }
+
+  .screen.flash-mod {
+    flex: none;
+    width: 100%;
+  }
+
+  .nameplate-and-controls {
+    flex: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .chloe-howard {
+    width: 300px;
+  }
+
+  .vents {
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+
+  .div-block {
+    height: 6px;
+  }
+
+  .top-programs {
+    flex-flow: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .nav-doc {
+    display: none;
+  }
+
+  .tattoo-slide-widget {
+    order: -1;
+    width: 200px;
+    height: 250px;
+  }
+
+  .text-block-3 {
+    padding-left: 10px;
+  }
+
+  .mobile-nav {
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 20px;
+    display: flex;
+  }
+
+  .mobile-shelf {
+    background-image: url('../images/mobile-shelves.webp');
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 125px;
+    height: 125px;
+    position: relative;
+  }
+
+  .text-block-4 {
+    color: var(--hot-pink);
+    text-align: center;
+    font-family: Pixeloidsans, sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
+  .image-2 {
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+  }
+
+  .image-2.merch {
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--white), rgba(255, 255, 255, 0) 67%);
+    top: -10%;
+  }
+
+  .image-2.merch:hover {
+    top: -15%;
+  }
+
+  .image-2.info {
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--white), rgba(255, 255, 255, 0) 63%);
+    top: -10%;
+  }
+
+  .image-2.info:hover {
+    top: -15%;
+  }
+
+  .image-2.gallery {
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--white), rgba(255, 255, 255, 0) 68%);
+    top: -10%;
+  }
+
+  .image-2.gallery:hover {
+    top: -15%;
+  }
+
+  .image-2.flash {
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--white), rgba(255, 255, 255, 0) 60%);
+    top: -10%;
+  }
+
+  .image-2.flash:hover {
+    top: -15%;
+  }
+
+  .image-2.booking {
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--white), rgba(255, 255, 255, 0) 52%);
+    top: -10%;
+  }
+
+  .image-2.booking:hover {
+    top: -15%;
+  }
+
+  .booking-contents {
+    flex-flow: column;
+  }
+
+  .booking-left-side {
+    width: auto;
+    height: 20%;
+  }
+
+  .div-block-6 {
+    height: 69%;
+  }
+
+  .text-block-6 {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .buttons-box {
+    flex-flow: column;
+  }
+
+  .div-block-7 {
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+  }
+
+  .div-block-7.flash-mod {
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .text-block-8 {
+    text-align: center;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .text-block-8.more-flash-mod {
+    text-align: center;
+    flex: none;
+    align-self: center;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .text-block-8.gallery-selector {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .div-block-8 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .div-block-8.flash-mod {
+    flex-flow: column;
+  }
+
+  .div-block-8.gallery-mod {
+    flex-flow: column;
+    flex: none;
+    height: 400px;
+  }
+
+  .flash-header {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    flex-flow: column;
+    width: auto;
+  }
+
+  .flash-header-text.aftercare-mod {
+    white-space: normal;
+    width: 100%;
+  }
+
+  .text-block-11 {
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: normal;
+    width: 100%;
+    font-size: 38px;
+  }
+
+  .text-block-12 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .flash-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .body {
+    background-color: var(--black);
+  }
+
+  .text-block-17 {
+    font-size: 38px;
+  }
+
+  .div-block-13.custom-examples {
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .aftercare {
+    top: -56%;
+    bottom: auto;
+    left: 0%;
+    right: auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .frame {
+    height: 100vh;
+    padding: 10px;
+  }
+
+  .screen-and-speakers.flash-mod {
+    flex: none;
+    height: 100%;
+  }
+
+  .screen {
+    flex: none;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .screen.flash-mod.aftercare-mod {
+    padding: 5px;
+  }
+
+  .chloe-howard {
+    flex: 1;
+    width: 200px;
+  }
+
+  .controls-right, .controls-left {
+    flex: none;
+  }
+
+  .vents {
+    display: none;
+  }
+
+  .top-programs {
+    align-self: flex-start;
+    margin: 10px;
+  }
+
+  .tattoo-slide-widget {
+    width: 175px;
+    padding: 5px;
+  }
+
+  .div-block-4 {
+    display: none;
+  }
+
+  .mobile-nav {
+    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .mobile-shelf {
+    width: 100px;
+    height: 100px;
+  }
+
+  .text-block-4 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .window.flash-mod {
+    border-width: 5px;
+  }
+
+  .div-block-6 {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    flex: 1;
+  }
+
+  .data-loading {
+    font-size: 8px;
+  }
+
+  .text-block-5 {
+    font-size: 33px;
+    line-height: 31px;
+  }
+
+  .text-block-6 {
+    text-transform: none;
+    margin-top: 5px;
+    font-size: 3.5vw;
+    line-height: 26px;
+    overflow: scroll;
+  }
+
+  .text-block-7 {
+    font-size: 10px;
+  }
+
+  .buttons-box {
+    flex: 1;
+  }
+
+  .div-block-8 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .link-block, .link-block-2 {
+    width: 100%;
+  }
+
+  .div-block-10 {
+    display: none;
+  }
+
+  .flash-window-style {
+    padding: 5px;
+  }
+
+  .inner-border {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .text-block-10 {
+    font-size: 8px;
+  }
+
+  .flash-header-text {
+    margin-left: 0;
+  }
+
+  .flash-header-text.aftercare-mod {
+    text-align: center;
+  }
+
+  .text-block-11 {
+    text-align: center;
+    white-space: normal;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .image-5 {
+    width: 150px;
+  }
+
+  .text-block-12 {
+    white-space: normal;
+    margin-top: 0;
+  }
+
+  .flash-grid {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .more-flash {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .flash-disclaimer {
+    margin: 20px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .text-block-15 {
+    font-size: 13px;
+  }
+
+  .body {
+    background-color: #13131f;
+  }
+
+  .gallery-selector {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .tattoo-selector, .illustration-selector {
+    text-decoration: none;
+  }
+
+  .text-block-16 {
+    font-size: 6vw;
+  }
+
+  .tattoo-gallery {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .text-block-17 {
+    padding-bottom: 0;
+    font-size: 30px;
+  }
+
+  .tattoo-grid {
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: 1fr;
+  }
+
+  .div-block-12 {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .image-7 {
+    width: 100%;
+  }
+
+  .text-block-18, .bold-text {
+    font-size: 14px;
+  }
+
+  .aftercare-wrapper {
+    margin-top: 0;
+  }
+
+  .aftercare {
+    top: auto;
+    bottom: -64%;
+    left: 0%;
+    right: auto;
+  }
+}
+
+
+@font-face {
+  font-family: 'Pixeloidsans';
+  src: url('../fonts/PixeloidSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pixeloidsans';
+  src: url('../fonts/PixeloidSans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
